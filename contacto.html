@@ -13,87 +13,85 @@
   <body class="fondo1">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="contenido.html">Contenido<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="contenido.html">Contenido<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
-              </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="contacto.html">Contacto<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">Action 1</a>
-                <a class="dropdown-item" href="#">Action 2</a>
-              </div>
-            </li>-->
-          </ul>
-          <!--form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form-->
-        </div>
-      </nav>
+            <li class="nav-item active">
+              <a class="nav-link" href="###">Ayuda<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="jumbotron jumbotron-fluid fondo1">
+    
+
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid fondo1">
         <div class="container">
             <h1 class="display-3">Contacto</h1>
             <p class="lead">Todos a reciclar</p>
             <hr class="my-2">
             <p>Por que tu opinion es importante si tienes consultas, sugerencias o
-                ideas hazmelo saber</p>
-            <!--p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-            </p-->
+                ideas hazmelo saber.<br> Ademas se enviara información a tu correo.</p>
         </div>
     </div>
+    </div>    
 
 <div class="container">
     <form>
-        <div class="form-group row">
+        <div class="form-group row ">
+          <div class="col-lg-1">
             <label for="name" class="col-sm-1-12 col-form-label">Nombre</label>
-            <div class="col-sm-1-12">
+          </div>
+            <div class="col-lg-3">
                 <input type="text" class="form-control" name="name" id="name" placeholder="Mi nombre" required>
             </div>
         </div>
         <div class="form-group row">
+          <div class="col-lg-1">
             <label for="phone" class="col-sm-1-12 col-form-label">Telefono</label>
-            <div class="col-sm-1-12">
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="56-981999999" required>
+          </div>
+            <div class="col-lg-3">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="56-981999999" required>
             </div>
         </div>
         <div class="form-group row">
+          <div class="col-lg-1">
             <label for="eMail" class="col-sm-1-12 col-form-label">Email</label>
-            <div class="col-sm-1-12">
-                <input type="text" class="form-control" name="eMail" id="eMail" placeholder="Micorreo@gmail.com" required>
+          </div>
+            <div class="col-md-3">
+                <input type="email" class="form-control" name="eMail" id="eMail" placeholder="Micorreo@gmail.com" required>
             </div>
         </div>
-
-        <!--fieldset class="form-group row">
-            <legend class="col-form-legend col-sm-1-12">Group name</legend>
-            <div class="col-sm-1-12">                
-            </div>
-        </fieldset-->
-
         <div class="form-group row">
-            <div class="offset-sm-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">submit</button>
+          
+          <div class="col-lg-1">
+        </div>
+            <div class="col-lg-1">
+              <button type="submit" class="btn btn-outline-light">submit</button>
             </div>
         </div>
     </form>
 </div>
 
-<footer>Pagina desarrollada por @bcarvajal - 2021</footer>
+<div class="container fixed-bottom ">
+    <footer>Pagina desarrollada por @bcarvajal - 2021</footer>  
+</div>
+
+
+
+
 
       
     <!-- Optional JavaScript -->
