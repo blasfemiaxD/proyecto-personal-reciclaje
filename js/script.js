@@ -1,4 +1,4 @@
-
+function fechaActual(){
   var hoy = new Date();
   console.log(hoy);
   
@@ -18,8 +18,28 @@
 
   //document.getElementById("fecha").innerHTML = fecha;
 
+}
+  
+
   function mensajeBienbenida(){
       alert("bienvenido a la web del reciclaje");
+  }
+
+  function colorRandom(){
+    console.log("Ingreso a funcion colorRandom");
+    var numeroRamdon;
+    var sRandon = '#';
+    s = "0123456789ABCDEF";
+
+    for(var i=0; i<6;i++){
+    //numeroRamdon = Math.floor(Math.random()*16);
+     sRandon += s[Math.floor(Math.random()*16)]; 
+    //console.log(numeroRamdon);
+    console.log(sRandon);
+  }
+    //document.getElementById("h1JumbotronIndex").innerHTML = sRandon;
+    var h1Index = document.getElementById("h1JumbotronIndex");
+    h1Index.style.color = sRandon;
   }
 
 
