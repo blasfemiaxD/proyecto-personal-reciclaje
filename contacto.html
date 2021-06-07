@@ -49,38 +49,54 @@
     </div>    
 
 <div class="container">
-    <form>
+    <form id="contactForm" method="post" action="">
+
         <div class="form-group row ">
-          <div class="col-lg-1">
-            <label for="name" class="col-sm-1-12 col-form-label">Nombre</label>
+          <div class="col-sm-6 col-md-6 col-lg-2">
+            <label for="txtName" class="col-sm-1-12 col-form-label">Nombre</label>
           </div>
-            <div class="col-lg-3">
-                <input type="text" class="form-control" name="name" id="name" placeholder="Mi nombre" required>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Mi nombre">
             </div>
         </div>
+
         <div class="form-group row">
-          <div class="col-lg-1">
-            <label for="phone" class="col-sm-1-12 col-form-label">Telefono</label>
+          <div class="col-sm-6 col-md-6 col-lg-2">
+            <label for="txtPhone" class="col-sm-1-12 col-form-label">Telefono (+56)</label>
           </div>
-            <div class="col-lg-3">
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="56-981999999" required>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <input type="tel" class="form-control" name="txtPhone" id="txtPhone" placeholder="912345678">
             </div>
         </div>
+
         <div class="form-group row">
-          <div class="col-lg-1">
-            <label for="eMail" class="col-sm-1-12 col-form-label">Email</label>
+          <div class="col-sm-6 col-md-6 col-lg-2">
+            <label for="txtEmail" class="col-sm-1-12 col-form-label">Email</label>
           </div>
-            <div class="col-md-3">
-                <input type="email" class="form-control" name="eMail" id="eMail" placeholder="Micorreo@gmail.com" required>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Micorreo@gmail.com">
             </div>
         </div>
+
         <div class="form-group row">
-          
-          <div class="col-lg-1">
-        </div>
+          <div class="col-sm-6 col-md-6 col-lg-2">
+            <label for="txtMessage" class="col-sm-1-12 col-form-label">Comentarios</label>
+          </div>
+            <div class="col-sm-6 col-md-6 col-lg-5">
+              <textarea class="form-control" id="txtMessage" name="txtMessage" rows="4"></textarea>
+            </div>
+        </div>        
+
+        <div class="form-group row">
+          <div class="col-lg-2">
+           <!--input type="submit" class="btn btn-outline-light bottomleft" value="Enviar"-->
+            <button type="submit" class="btn btn-outline-light bottomleft">Enviar</button>
+          </div>
+          <div class="form-group row">          
             <div class="col-lg-1">
-              <button type="submit" class="btn btn-outline-light">submit</button>
-            </div>
+          </div>
+        </div>
+          
         </div>
     </form>
 </div>
@@ -90,14 +106,69 @@
 </div>
 
 
-
-
-
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        jQuery.validator.setDefaults({
+          debug: true,
+          success: "valid"
+        });
+
+        $("#contactForm").validate({        
+
+          submitHandler: function(form) {
+            alert("prueba");
+    form.submit();
+  },
+
+
+
+          rules: {
+            txtName: {
+              required: true,
+              minlength: 4,
+              maxlength: 30,
+            },
+            txtPhone: { 
+              digits: true,
+              rangelength: [9, 9],
+            },
+            txtEmail:{
+              required: true,
+              email: true
+            },
+            txtMessage:{
+              rangelength: [0, 100]
+            }
+          },
+          messages: {
+            txtName: {
+              required: "Debe ingresar su nombre",
+              minlength: "El nombre debe tener minimo 4 caracteres",
+              maxlength: "El nombre debe tener como maximo 30 caracteres",
+            },
+            txtPhone: {
+              digits: "Telefono debe contener sólo digitos",
+              rangelength: "Telefono debe contener esxactamente 9 digitos",
+            },
+            txtEmail:{
+              required: "Debe ingresar e-mail",
+              email: "Debe ingresar un mail valido"
+            },
+            txtMessage:{
+              rangelength: "Comentarios no debe sobrepasar los 100 caracteres"
+            }
+          }          
+        });        
+      });
+
+    </script>
   </body>
 </html>
