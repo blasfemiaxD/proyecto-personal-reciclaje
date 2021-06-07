@@ -1,6 +1,6 @@
 .fondo1 {
-    background-color: aqua;
-    background-image: url("img/capa.png"), url("img/reciclaje_2.jpg");
+    /*background-color: aqua;*/
+    background-image: url("img/capa.png"), url("img/reciclaje_2.jpg"), url("img/Hojas.gif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,19 @@
 
   body{
     color: aliceblue;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  }
+
+  .footerCopyright{
+    background-color: #f1f1f1;
+    color: black;
+    text-align: center;
+  }
+
+  .S_bg-color_04{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .S_bg-color_02{
+    background-color: rgba(0, 0, 0, 0.2);
   }

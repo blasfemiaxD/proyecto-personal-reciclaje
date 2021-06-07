@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
   <body class="fondo1">
 
@@ -101,9 +102,39 @@
     </form>
 </div>
 
-<div class="container fixed-bottom ">
-    <footer>Pagina desarrollada por @bcarvajal - 2021</footer>  
-</div>
+<footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
+  <div class="container">
+    <section >
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-facebook"></i></a>          
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-twitter"></i></a>          
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-instagram"></i></a>
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-github"></i></a>
+    </section>
+  </div>
+  <div class="text-center text-dark p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p class="text-dark">Pagina desarrollada por @bcarvajal</p>
+  </div>
+</footer>  
 
 
       
@@ -125,11 +156,8 @@
 
           submitHandler: function(form) {
             alert("prueba");
-    form.submit();
-  },
-
-
-
+            form.submit();
+          },
           rules: {
             txtName: {
               required: true,

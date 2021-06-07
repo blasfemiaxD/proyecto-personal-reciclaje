@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
   <body class="fondo1">
 
@@ -31,8 +32,11 @@
                 <a class="nav-link" href="###">Ayuda<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <button type="button" class="btn btn-outline-primary btn-sm" onclick="colorRandom()">Cambia Color H1 Index</button>
+                <a class="nav-link" href="###" onclick="colorRandom()">Cambia Color<span class="sr-only">(current)</span></a>
               </li>
+              <!--li class="nav-item active">
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="colorRandom()">Cambia Color H1 Index</button>
+              </li-->
           </ul>
         </div>
       </nav>
@@ -45,13 +49,16 @@
 
     <div class="container">
         <main>
-      
+
+          <section id="whoIAm" class="p-5 m-2 S_background-color S_bg-color_04">
             <h2>Quien soy yo xD</h2>
             <p>
               Mi nombre es Blas Carvajal Ingeniero ejec. informatico retomando la
               programación y volviendo a la Quinta Región.
             </p>
-      
+          </section>
+
+          <section id="beginning" class="p-5 m-2 S_bg-color_04">
             <h2>Declaracion de principios</h2>
       
             <p>
@@ -59,38 +66,111 @@
               iure corporis? Obcaecati, mollitia. Ipsa exercitationem ab maiores earum
               <br />
               eum hic blanditiis, quae commodi excepturi inventore nisi? Impedit,
-              nostrum?
+              nostrum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptate provident inventore sint vel veritatis autem quidem cumque odio dignissimos est nihil, deleniti veniam esse id porro, doloribus voluptatum temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laudantium quam necessitatibus soluta unde tempora accusamus iste sit aliquid ipsa velit error debitis temporibus neque ipsam porro consectetur dicta modi?
             </p>
-      
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta quo pariatur rem voluptatum, magnam temporibus placeat qui nesciunt distinctio maiores deserunt recusandae quibusdam totam assumenda dolores possimus eius iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum ea omnis impedit voluptas libero dolores esse asperiores, dolorum at nemo excepturi distinctio iste nam aliquid aliquam inventore eum possimus</p>
+
+          </section>
+
+          <section id="everyoneToRecycle" class="p-3 m-2 S_bg-color_04">
             <h2>Todos a reciclar</h2>
             <p>
               En el mundo vivimos debemos darnos el tiempo de cuidar nuentro planeta y
               empezar a reciclar para... si quieres saber mas pincha
               <a href="contenido.html">aca</a>
             </p>
-          </main>
-        
+          </section>  
+            
+            <!--div class="card .bg-white mb-3 order-primary">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+
+            <div class="card bg-light order-primary">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div-->
+
+          </main>        
     </div>
 
-    <!--div class="container" id="fecha">
-      <h1>aca va la fecha</h1>
-    </div-->
+    <div class="container-fluid text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      <h2>Descarga la apps para localizar los puntos de reciclaje cercanos a ti</h2>
 
-    <!--div class="container" id="fecha">
-      <h1>aca va la fecha</h1>
-    </div-->
-
-
-    <div class="container fixed-bottom">
-      <div class="row">
-        <div class="col-md-6">
-          <footer>Pagina desarrollada por @bcarvajal - 2021</footer>
+      <div class="row p-5">
+        <div class="col-md-3">          
         </div>
-        <div class="col-md-6" id="fecha"> 
-        </div>  
-      </div>      
-  </div>
+        <div class="col-md-3">
+          <a href="###">
+            <img src="img/stores-apple.png" alt="app store">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="###">
+            <img src="img/stores-google.png" alt="app store">
+          </a>
+        </div>
+        <div class="col-md-3">          
+        </div>        
+      </div>
+      <div class="row p-5">
+        
+      </div>
+    </div>
+ 
+   
 
+          <!--footer class="fixed-bottom">Pagina desarrollada por @bcarvajal - 2021</footer-->
+
+          <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
+            
+            <div class="container">
+              <section >
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="https://www.facebook.com/BlasfemiaxD"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="bi bi-facebook"></i></a>          
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="bi bi-twitter"></i></a>          
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="bi bi-instagram"></i></a>
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="https://github.com/blasfemiaxD"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="bi bi-github"></i></a>
+              </section>
+            </div>
+
+            <div class="text-center text-dark p-1 S_bg-color_02">
+              <p class="text-dark">Pagina desarrollada por @bcarvajal</p>
+            </div>
+
+          </footer>      
+
+        
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -104,7 +184,7 @@
 
   <script>
     //desde script.js
-    mensajeBienbenida();
+    //mensajeBienbenida();
 
     //fechaActual2();
   
@@ -113,9 +193,13 @@
       icon: 'success',
       title: 'bienvenido a la web del reciclaje',
       showConfirmButton: false,
-      timer: 1500,
+      timer: 2500,
+      timerProgressBar: true,
       width: 600,
       padding: '3em',
+      backdrop: `
+    rgba(34,153,84,0.2)
+  `
     })
   </script>
   
